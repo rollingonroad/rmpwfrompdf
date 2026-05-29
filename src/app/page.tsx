@@ -155,10 +155,10 @@ export default function Home() {
         <div
           {...getRootProps()}
           className={`
-            relative rounded-[18px] border-2 border-dashed transition-all duration-200 cursor-pointer
+            relative rounded-[18px] border border-[#D2D2D7] transition-all duration-200 cursor-pointer bg-white
             ${isDragActive
-              ? 'border-[#007AFF] bg-[#F5F5F7]'
-              : 'border-[#D2D2D7] bg-white hover:border-[#AEAEB2]'
+              ? 'border-[#007AFF] border-2 bg-[#F5F5F7]'
+              : 'hover:border-[#AEAEB2] hover:border-2'
             }
           `}
           style={{
