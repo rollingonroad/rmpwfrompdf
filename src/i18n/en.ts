@@ -16,6 +16,22 @@ export const en = {
   fileCount: '{{count}} file(s)',
   clearAll: 'Clear All',
   unlockPdf: 'Unlock PDF',
+  faqTitle: 'Frequently Asked Questions',
+  faqSecureQ: 'Is my PDF file secure?',
+  faqSecureA: 'Yes. Your files are processed entirely in your browser. We never upload your PDFs to any server. Your files stay on your device throughout the entire process.',
+  faqPasswordTypesQ: 'What types of PDF passwords can be removed?',
+  faqPasswordTypesA: 'We support removing user passwords protected with AES-256 and RC4 encryption, which are the most common encryption methods for password-protected PDFs.',
+  faqFreeQ: 'Is this service free?',
+  faqFreeA: 'Yes, removing PDF passwords is completely free. You can unlock unlimited PDF files without any payment or registration required.',
+  faqHowQ: 'How do I remove a PDF password?',
+  faqHowA: 'Simply drag and drop your password-protected PDF onto the upload area, enter the password, and click the remove button. Your unlocked PDF will be ready for download instantly.',
+  featuresTitle: 'Why Choose Our PDF Password Remover',
+  featureSecure: '100% Secure',
+  featureSecureDesc: 'Files processed locally in your browser',
+  featureFast: 'Instant Processing',
+  featureFastDesc: 'Unlock PDFs in seconds',
+  featureFree: 'Completely Free',
+  featureFreeDesc: 'No hidden charges or limits',
 };
 
 export type TranslationKey = keyof typeof en;

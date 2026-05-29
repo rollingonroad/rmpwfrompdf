@@ -425,54 +425,54 @@ export default function Home() {
 
         {/* FAQ Section for SEO */}
         <section aria-labelledby="faq-heading" className="mt-12 sm:mt-16 pt-8 sm:pt-12 border-t border-[#E8E8ED]">
-          <h2 id="faq-heading" className="text-xl sm:text-2xl font-bold text-[#1D1D1F] mb-5 sm:mb-6 text-center">Frequently Asked Questions</h2>
+          <h2 id="faq-heading" className="text-xl sm:text-2xl font-bold text-[#1D1D1F] mb-5 sm:mb-6 text-center">{tr('faqTitle')}</h2>
 
           <div className="space-y-3 sm:space-y-4">
             <details className="bg-white rounded-xl sm:rounded-[12px] p-4 sm:p-5">
               <summary className="text-sm sm:text-[16px] font-medium text-[#1D1D1F] cursor-pointer list-none flex justify-between items-center">
-                <span>Is my PDF file secure?</span>
+                <span>{tr('faqSecureQ')}</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-5 sm:h-5 flex-shrink-0">
                   <polyline points="6 9 12 15 18 9"/>
                 </svg>
               </summary>
               <p className="mt-3 text-sm sm:text-[15px] text-[#86868B] leading-relaxed">
-                Yes. Your files are processed entirely in your browser. We never upload your PDFs to any server. Your files stay on your device throughout the entire process.
+                {tr('faqSecureA')}
               </p>
             </details>
 
             <details className="bg-white rounded-xl sm:rounded-[12px] p-4 sm:p-5">
               <summary className="text-sm sm:text-[16px] font-medium text-[#1D1D1F] cursor-pointer list-none flex justify-between items-center">
-                <span>What types of PDF passwords can be removed?</span>
+                <span>{tr('faqPasswordTypesQ')}</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-5 sm:h-5 flex-shrink-0">
                   <polyline points="6 9 12 15 18 9"/>
                 </svg>
               </summary>
               <p className="mt-3 text-sm sm:text-[15px] text-[#86868B] leading-relaxed">
-                We support removing user passwords protected with AES-256 and RC4 encryption, which are the most common encryption methods for password-protected PDFs.
+                {tr('faqPasswordTypesA')}
               </p>
             </details>
 
             <details className="bg-white rounded-xl sm:rounded-[12px] p-4 sm:p-5">
               <summary className="text-sm sm:text-[16px] font-medium text-[#1D1D1F] cursor-pointer list-none flex justify-between items-center">
-                <span>Is this service free?</span>
+                <span>{tr('faqFreeQ')}</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-5 sm:h-5 flex-shrink-0">
                   <polyline points="6 9 12 15 18 9"/>
                 </svg>
               </summary>
               <p className="mt-3 text-sm sm:text-[15px] text-[#86868B] leading-relaxed">
-                Yes, removing PDF passwords is completely free. You can unlock unlimited PDF files without any payment or registration required.
+                {tr('faqFreeA')}
               </p>
             </details>
 
             <details className="bg-white rounded-xl sm:rounded-[12px] p-4 sm:p-5">
               <summary className="text-sm sm:text-[16px] font-medium text-[#1D1D1F] cursor-pointer list-none flex justify-between items-center">
-                <span>How do I remove a PDF password?</span>
+                <span>{tr('faqHowQ')}</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-5 sm:h-5 flex-shrink-0">
                   <polyline points="6 9 12 15 18 9"/>
                 </svg>
               </summary>
               <p className="mt-3 text-sm sm:text-[15px] text-[#86868B] leading-relaxed">
-                Simply drag and drop your password-protected PDF onto the upload area, enter the password, and click the remove button. Your unlocked PDF will be ready for download instantly.
+                {tr('faqHowA')}
               </p>
             </details>
           </div>
@@ -480,7 +480,7 @@ export default function Home() {
 
         {/* Features Section */}
         <section aria-labelledby="features-heading" className="mt-12 sm:mt-16 pt-8 sm:pt-12 border-t border-[#E8E8ED]">
-          <h2 id="features-heading" className="text-xl sm:text-2xl font-bold text-[#1D1D1F] mb-6 sm:mb-8 text-center">Why Choose Our PDF Password Remover</h2>
+          <h2 id="features-heading" className="text-xl sm:text-2xl font-bold text-[#1D1D1F] mb-6 sm:mb-8 text-center">{tr('featuresTitle')}</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
             <div className="text-center p-4">
@@ -490,8 +490,8 @@ export default function Home() {
                   <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                 </svg>
               </div>
-              <h3 className="text-sm sm:text-[16px] font-semibold text-[#1D1D1F] mb-1 sm:mb-2">100% Secure</h3>
-              <p className="text-xs sm:text-[14px] text-[#86868B]">Files processed locally</p>
+              <h3 className="text-sm sm:text-[16px] font-semibold text-[#1D1D1F] mb-1 sm:mb-2">{tr('featureSecure')}</h3>
+              <p className="text-xs sm:text-[14px] text-[#86868B]">{tr('featureSecureDesc')}</p>
             </div>
 
             <div className="text-center p-4">
@@ -501,8 +501,8 @@ export default function Home() {
                   <polyline points="12 6 12 12 16 14"/>
                 </svg>
               </div>
-              <h3 className="text-sm sm:text-[16px] font-semibold text-[#1D1D1F] mb-1 sm:mb-2">Instant Processing</h3>
-              <p className="text-xs sm:text-[14px] text-[#86868B]">Unlock PDFs in seconds</p>
+              <h3 className="text-sm sm:text-[16px] font-semibold text-[#1D1D1F] mb-1 sm:mb-2">{tr('featureFast')}</h3>
+              <p className="text-xs sm:text-[14px] text-[#86868B]">{tr('featureFastDesc')}</p>
             </div>
 
             <div className="text-center p-4">
@@ -512,8 +512,8 @@ export default function Home() {
                   <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
                 </svg>
               </div>
-              <h3 className="text-sm sm:text-[16px] font-semibold text-[#1D1D1F] mb-1 sm:mb-2">Completely Free</h3>
-              <p className="text-xs sm:text-[14px] text-[#86868B]">No hidden charges</p>
+              <h3 className="text-sm sm:text-[16px] font-semibold text-[#1D1D1F] mb-1 sm:mb-2">{tr('featureFree')}</h3>
+              <p className="text-xs sm:text-[14px] text-[#86868B]">{tr('featureFreeDesc')}</p>
             </div>
           </div>
         </section>
