@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://pdf.yun.info",
   },
+  verification: {
+    google: "1s3oFrO2-fC0xbA5BLrAegF8fJdD-pZyp0UtkzMAjiM",
+  },
 };
 
 export default function RootLayout({
