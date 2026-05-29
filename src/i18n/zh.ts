@@ -1,9 +1,9 @@
-import { TranslationKeys } from './en';
+import { TranslationKey } from './en';
 
-export const zh: Record<TranslationKeys, string> = {
+export const zh: Record<TranslationKey, string> = {
   title: '移除 PDF 密码',
-  description: '上传带密码的 PDF 文件，即时移除密码保护。',
-  dropzone: '拖拽 PDF 文件到此处或点击选择',
+  description: '上传带密码的 PDF 文件，即时安全地移除密码保护。',
+  dropzone: '拖拽 PDF 文件到此处，或点击浏览',
   fileList: '文件列表',
   password: '密码',
   passwordPlaceholder: '输入 PDF 密码',
@@ -11,11 +11,11 @@ export const zh: Record<TranslationKeys, string> = {
   processing: '处理中...',
   download: '下载',
   downloadAll: '下载全部',
-  success: '成功',
+  success: '完成',
   error: '错误',
   wrongPassword: '密码错误',
   noFiles: '尚未上传文件',
-  fileCount: '共 {{count}} 个文件',
+  fileCount: '{{count}} 个文件',
   clearAll: '清空全部',
-  adPlaceholder: '广告位',
+  unlockPdf: '解锁 PDF',
 };

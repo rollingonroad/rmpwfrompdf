@@ -1,7 +1,7 @@
 export const en = {
   title: 'Remove PDF Password',
-  description: 'Upload password-protected PDF files and remove their passwords instantly.',
-  dropzone: 'Drop PDF files here or click to select',
+  description: 'Upload password-protected PDF files and remove their passwords instantly and securely.',
+  dropzone: 'Drag & drop PDF files here, or click to browse',
   fileList: 'Files',
   password: 'Password',
   passwordPlaceholder: 'Enter PDF password',
@@ -9,13 +9,13 @@ export const en = {
   processing: 'Processing...',
   download: 'Download',
   downloadAll: 'Download All',
-  success: 'Success',
+  success: 'Done',
   error: 'Error',
   wrongPassword: 'Incorrect password',
-  noFiles: 'No files uploaded yet',
+  noFiles: 'No files uploaded',
   fileCount: '{{count}} file(s)',
   clearAll: 'Clear All',
-  adPlaceholder: 'Advertisement',
+  unlockPdf: 'Unlock PDF',
 };
 
-export type TranslationKeys = keyof typeof en;
+export type TranslationKey = keyof typeof en;
