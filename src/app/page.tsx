@@ -181,7 +181,7 @@ export default function Home() {
             aria-label="Upload PDF files"
             tabIndex={0}
             style={{
-              padding: '40px 20px sm:py-14 sm:px-10',
+              padding: '64px 40px',
               boxShadow: isDragActive
                 ? '0 0 0 4px rgba(0, 122, 255, 0.1)'
                 : '0 2px 12px rgba(0, 0, 0, 0.04)',
@@ -192,21 +192,20 @@ export default function Home() {
             <div className="flex flex-col items-center">
               {/* Upload Icon */}
               <div
-                className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl sm:rounded-[14px] bg-[#007AFF] flex items-center justify-center mb-4 sm:mb-5"
+                className="w-16 h-14 rounded-2xl sm:rounded-[14px] bg-[#007AFF] flex items-center justify-center mb-6"
                 style={{ boxShadow: '0 4px 12px rgba(0, 122, 255, 0.3)' }}
                 aria-hidden="true"
               >
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="sm:w-[26px] sm:h-[26px]">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                   <polyline points="17 8 12 3 7 8"/>
                   <line x1="12" y1="3" x2="12" y2="15"/>
                 </svg>
               </div>
 
-              <p className="text-base sm:text-[17px] font-medium text-[#1D1D1F] mb-1 text-center px-4">
+              <p className="text-[17px] font-medium text-[#1D1D1F] mb-1 text-center">
                 {isDragActive ? tr('dropzone').split(',')[0] : tr('dropzone')}
               </p>
-              <p className="text-xs sm:text-sm text-[#86868B]" aria-label="Supported format">PDF</p>
             </div>
           </div>
         </section>
