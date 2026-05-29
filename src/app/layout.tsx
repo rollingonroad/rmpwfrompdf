@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "decrypt PDF",
     "PDF password bypass"
   ],
-  authors: [{ name: "rmpwfrompdf" }],
+  authors: [{ name: "pdf.yun.info" }],
   openGraph: {
     title: "Remove PDF Password | Free PDF Unlocker",
     description: "Unlock password-protected PDF files instantly and for free. 100% secure - files never leave your device.",
     type: "website",
     locale: "en_US",
-    siteName: "rmpwfrompdf",
+    siteName: "pdf.yun.info",
   },
   twitter: {
     card: "summary_large_image",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://rmpwfrompdf.com",
+    canonical: "https://pdf.yun.info",
   },
 };
 

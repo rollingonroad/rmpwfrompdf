@@ -147,7 +147,7 @@ export default function Home() {
       {/* Navigation */}
       <nav role="navigation" aria-label="Main navigation" className="bg-white shadow-sm">
         <div className="max-w-[680px] mx-auto px-6 py-4">
-          <span className="text-[17px] font-semibold text-[#1D1D1F]">rmpwfrompdf</span>
+          <span className="text-[17px] font-semibold text-[#1D1D1F]">pdf.yun.info</span>
         </div>
       </nav>
 
@@ -429,7 +429,7 @@ export default function Home() {
       <footer role="contentinfo" className="bg-white border-t border-[#E8E8ED] mt-16">
         <div className="max-w-[680px] mx-auto px-6 py-8">
           <div className="text-center text-[14px] text-[#86868B]">
-            <p className="mb-2">© 2026 rmpwfrompdf. All rights reserved.</p>
+            <p className="mb-2">© 2026 pdf.yun.info. All rights reserved.</p>
             <nav aria-label="Footer navigation" className="flex justify-center gap-4">
               <a href="#" className="hover:text-[#007AFF] transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-[#007AFF] transition-colors">Terms of Service</a>
