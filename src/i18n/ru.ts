@@ -34,4 +34,5 @@ export const ru: Record<TranslationKey, string> = {
   featureFastDesc: 'Разблокируйте PDF за секунды',
   featureFree: 'Полностью бесплатно',
   featureFreeDesc: 'Без скрытых платежей или ограничений',
+  decryptedCount: '{{count}} PDF-файлов разблокировано для пользователей',
 };

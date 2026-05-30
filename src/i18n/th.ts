@@ -34,4 +34,5 @@ export const th: Record<TranslationKey, string> = {
   featureFastDesc: 'ปลดล็อก PDF ในไม่กี่วินาที',
   featureFree: 'ฟรีทั้งหมด',
   featureFreeDesc: 'ไม่มีค่าใช้จ่ายหรือข้อจำกัดที่ซ่อนอยู่',
+  decryptedCount: 'ปลดล็อก {{count}} ไฟล์ PDF ให้ผู้ใช้แล้ว',
 };

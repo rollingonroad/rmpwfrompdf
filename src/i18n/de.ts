@@ -34,4 +34,5 @@ export const de: Record<TranslationKey, string> = {
   featureFastDesc: 'PDFs in Sekunden entsperren',
   featureFree: 'Vollständig kostenlos',
   featureFreeDesc: 'Keine versteckten Kosten oder Einschränkungen',
+  decryptedCount: '{{count}} PDF-Dateien für Benutzer entsperrt',
 };

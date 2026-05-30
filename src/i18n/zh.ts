@@ -34,4 +34,5 @@ export const zh: Record<TranslationKey, string> = {
   featureFastDesc: '几秒内解锁 PDF',
   featureFree: '完全免费',
   featureFreeDesc: '无隐藏费用或限制',
+  decryptedCount: '已为用户解锁 {{count}} 个 PDF 文件',
 };

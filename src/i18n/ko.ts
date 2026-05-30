@@ -34,4 +34,5 @@ export const ko: Record<TranslationKey, string> = {
   featureFastDesc: '몇 초 내에 PDF 잠금 해제',
   featureFree: '완전 무료',
   featureFreeDesc: '숨겨진 비용이나 제한 없음',
+  decryptedCount: '사용자를 위해 {{count}}개의 PDF 파일 잠금 해제됨',
 };

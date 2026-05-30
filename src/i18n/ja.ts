@@ -34,4 +34,5 @@ export const ja: Record<TranslationKey, string> = {
   featureFastDesc: '数秒でPDFをロック解除',
   featureFree: '完全無料',
   featureFreeDesc: '隠れた費用や制限なし',
+  decryptedCount: 'ユーザーのために{{count}}件のPDFファイルがロック解除されました',
 };

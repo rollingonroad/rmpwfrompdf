@@ -61,8 +61,14 @@ export function detectLanguage(acceptLanguage: string | null): Language {
   return 'en';
 }
 
-export function t(key: string, locale: Language = 'en'): string {
-  return translations[locale]?.[key] || translations.en[key] || key;
+export function t(key: string, locale?: Language, params?: Record<string, string>): string {
+  let text = translations[locale || 'en']?.[key] || translations.en[key] || key;
+  if (params) {
+    for (const [k, v] of Object.entries(params)) {
+      text = text.replace(`{{${k}}}`, v);
+    }
+  }
+  return text;
 }
 
 export function isRTL(locale: Language): boolean {

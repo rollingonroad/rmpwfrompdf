@@ -34,4 +34,5 @@ export const vi: Record<TranslationKey, string> = {
   featureFastDesc: 'Mở khóa PDF trong vài giây',
   featureFree: 'Hoàn toàn miễn phí',
   featureFreeDesc: 'Không có phí ẩn hoặc giới hạn',
+  decryptedCount: '{{count}} tệp PDF đã được mở khóa cho người dùng',
 };

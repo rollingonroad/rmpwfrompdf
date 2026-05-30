@@ -34,4 +34,5 @@ export const id: Record<TranslationKey, string> = {
   featureFastDesc: 'Buka kunci PDF dalam hitungan detik',
   featureFree: 'Sepenuhnya Gratis',
   featureFreeDesc: 'Tanpa biaya atau batasan tersembunyi',
+  decryptedCount: '{{count}} file PDF telah dibuka kuncinya untuk pengguna',
 };

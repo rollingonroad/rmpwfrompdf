@@ -18,15 +18,21 @@ export default function Home() {
   const [rtl, setRtl] = useState(false);
   const [files, setFiles] = useState<UploadedFile[]>([]);
   const [mounted, setMounted] = useState(false);
+  const [decryptCount, setDecryptCount] = useState(0);
 
   useEffect(() => {
     setMounted(true);
     const lang = detectLanguage(navigator.language);
     setLocale(lang);
     setRtl(isRTL(lang));
+
+    fetch('/api/stats')
+      .then(res => res.json())
+      .then(data => setDecryptCount(data.count || 0))
+      .catch(() => setDecryptCount(0));
   }, []);
 
-  const tr = useCallback((key: string) => t(key, locale), [locale]);
+  const tr = useCallback((key: string, params?: Record<string, string>) => t(key, locale, params), [locale]);
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     const newFiles = acceptedFiles.map((file) => ({
@@ -263,6 +269,11 @@ export default function Home() {
                           placeholder={tr('passwordPlaceholder')}
                           value={file.password}
                           onChange={(e) => handlePasswordChange(file.id, e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter' && file.password) {
+                              handleProcess(file.id);
+                            }
+                          }}
                           className="w-[150px] px-3 py-2 text-[15px] rounded-[10px] border border-[#D2D2D7] bg-white focus:border-[#007AFF] focus:outline-none focus:ring-2 focus:ring-[#007AFF]/20 transition-all"
                           aria-label={`Enter password for ${file.file.name}`}
                         />
@@ -361,6 +372,11 @@ export default function Home() {
                             placeholder={tr('passwordPlaceholder')}
                             value={file.password}
                             onChange={(e) => handlePasswordChange(file.id, e.target.value)}
+                            onKeyDown={(e) => {
+                              if (e.key === 'Enter' && file.password) {
+                                handleProcess(file.id);
+                              }
+                            }}
                             className="flex-1 px-3 py-2.5 text-sm rounded-xl border border-[#D2D2D7] bg-white focus:border-[#007AFF] focus:outline-none focus:ring-2 focus:ring-[#007AFF]/20 transition-all min-h-[44px]"
                             aria-label={`Enter password for ${file.file.name}`}
                           />
@@ -516,6 +532,11 @@ export default function Home() {
               <p className="text-xs sm:text-[14px] text-[#86868B]">{tr('featureFreeDesc')}</p>
             </div>
           </div>
+        </section>
+
+        {/* Decrypted Count Display */}
+        <section className="mt-8 sm:mt-12 text-center">
+          <p className="text-sm sm:text-[15px] text-[#86868B]" id="decrypted-count">{tr('decryptedCount', { count: decryptCount.toString() })}</p>
         </section>
       </main>
 

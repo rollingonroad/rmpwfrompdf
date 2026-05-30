@@ -34,4 +34,5 @@ export const es: Record<TranslationKey, string> = {
   featureFastDesc: 'Desbloquea PDFs en segundos',
   featureFree: 'Completamente gratis',
   featureFreeDesc: 'Sin cargos o límites ocultos',
+  decryptedCount: '{{count}} archivos PDF desbloqueados para usuarios',
 };

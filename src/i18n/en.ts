@@ -32,6 +32,7 @@ export const en = {
   featureFastDesc: 'Unlock PDFs in seconds',
   featureFree: 'Completely Free',
   featureFreeDesc: 'No hidden charges or limits',
+  decryptedCount: '{{count}} PDF files unlocked for users',
 };
 
 export type TranslationKey = keyof typeof en;

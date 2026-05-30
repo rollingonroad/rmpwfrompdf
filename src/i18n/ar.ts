@@ -34,4 +34,5 @@ export const ar: Record<TranslationKey, string> = {
   featureFastDesc: 'إلغاء قفل PDFs في ثوانٍ',
   featureFree: 'مجاني تماماً',
   featureFreeDesc: 'بدون رسوم أو قيود مخفية',
+  decryptedCount: 'تم إلغاء قفل {{count}} ملف PDF للمستخدمين',
 };

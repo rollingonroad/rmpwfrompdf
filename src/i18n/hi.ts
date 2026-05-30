@@ -34,4 +34,5 @@ export const hi: Record<TranslationKey, string> = {
   featureFastDesc: 'सेकंडों में PDF अनलॉक करें',
   featureFree: 'पूरी तरह मुफ्त',
   featureFreeDesc: 'कोई छिपा शुल्क या सीमा नहीं',
+  decryptedCount: 'उपयोगकर्ताओं के लिए {{count}} PDF फ़ाइलें अनलॉक की गईं',
 };

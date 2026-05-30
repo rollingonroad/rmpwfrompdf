@@ -1,5 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { removePdfPassword } from '@/lib/pdfUtils';
+import { Redis } from '@upstash/redis';
+
+const redis = new Redis({
+  url: process.env.UPSTASH_REDIS_REST_URL!,
+  token: process.env.UPSTASH_REDIS_REST_TOKEN!,
+});
+
+async function incrementDecryptCount() {
+  try {
+    const key = 'pdf_decrypted_count';
+    await redis.incr(key);
+  } catch (e) {
+    console.error('Failed to increment counter:', e);
+  }
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -19,6 +34,9 @@ export async function POST(request: NextRequest) {
     const pdfBytes = new Uint8Array(arrayBuffer);
 
     const result = await removePdfPassword(pdfBytes, password);
+
+    // Increment counter asynchronously (don't block the response)
+    incrementDecryptCount();
 
     return new NextResponse(Buffer.from(result), {
       status: 200,
